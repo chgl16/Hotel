@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(urlPatterns = "/login")
-public class LoginServlet extends HttpServlet {
+public class MemberLoginServlet extends HttpServlet {
     private LoginService loginService;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

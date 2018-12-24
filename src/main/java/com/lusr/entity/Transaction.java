@@ -12,12 +12,12 @@ import java.sql.Timestamp;
  */
 
 @Entity
-@Table(name="tb_transaction")
-public class TbTransactionEntity implements Serializable {
+@Table(name="transaction")
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int pk_id;
+    private int id;
     private String transaction_id;
     private int member_id;
     private String phone;
@@ -30,12 +30,12 @@ public class TbTransactionEntity implements Serializable {
     private Timestamp start_time;
     private Timestamp end_time;
 
-    public int getPk_id() {
-        return pk_id;
+    public int getId() {
+        return id;
     }
 
-    public void setPk_id(int pk_id) {
-        this.pk_id = pk_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTransaction_id() {

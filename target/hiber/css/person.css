@@ -1,0 +1,42 @@
+﻿#main_content{
+	color: #8B8B00;
+	font-size: 20px;
+}
+
+#changed_submit{
+	outline: none;
+	color: #8B8B00;
+	border: 1px solid #8B8B00;
+	padding: 5px 30px;
+    background: rgb(255,255,255,0);
+    border-radius: 5px;
+}
+
+#changed_submit:hover{
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+#changed ul li{
+	margin: 10px 0;
+}
+
+#changed ul li:nth-child(4){
+	margin-right: 20px;
+}
+
+#changed ul li input{
+	margin-left: 20px;
+	outline: none;
+	color: #8B8B00;
+	background: rgb(255,255,255,0);
+	border: 1px solid #8B8B00;
+	height: 40px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+#changed ul li input:hover{
+	border: 1px solid #000;
+}
+

@@ -5,9 +5,10 @@ import javax.persistence.*;
 /**
  * Created by ownlove on 2018/12/20.
  */
+
 @Entity
 @Table(name = "manager")
-public class TbManagerEntity {
+public class Manager {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

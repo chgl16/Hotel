@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>登录页面</title>
-    <link rel="stylesheet" type="text/css" th:href="@{css/login.css}">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 <body>
     <form id="root-form" action="/login" method="post">
         <span class="slogan">Please login</span>
-        <input type="text" class="input-message" name="username" placeholder="Username">
+        <input type="text" class="input-message" name="phone" placeholder="Phone">
         <br>
         <input type="password" class="input-message" name="password" placeholder="Password">
         <br><br>
@@ -16,7 +16,9 @@
         <br>
         <input type="reset" class="input-button" value="Reset">
         <br>
-        <a href="#">Register</a>
+        <a href="register.html">Register</a>
     </form>
+
+    <script src="../js/login.js"></script>
 </body>
 </html>

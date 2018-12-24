@@ -1,22 +1,20 @@
 package com.lusr.entity;
 
-import lombok.Data;
-
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * Created by ownlove on 2018/12/19.
  */
+
 @Entity
 @Table(name = "member")
-public class TbMemberEntity implements Serializable {
+public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String phone;
     private String identity;
-    private String name;
+    private String username;
     private String password;
 
     public int getId() {
@@ -43,12 +41,12 @@ public class TbMemberEntity implements Serializable {
         this.identity = identity;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -57,5 +55,20 @@ public class TbMemberEntity implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Member() {}
+
+    public Member(String phone, String username, String identity, String password) {
+        this.phone = phone;
+        this.username = username;
+        this.identity = identity;
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "member: [id: " + id + ", phone: " + phone + ", username: " + username
+                + ", identity: " + identity + ", password: " + password + "]";
     }
 }
