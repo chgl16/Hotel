@@ -34,6 +34,4 @@ public class BaseDaoImpl{
     public List BaseFindAll(Class clz) {
         return JPAUtil.findAll(clz);
     }
-
-
 }

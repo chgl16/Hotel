@@ -2,6 +2,8 @@ import com.lusr.entity.TbManagerEntity;
 import com.lusr.dao.ITbManagerDao;
 import com.lusr.dao.impl.TbManagerDaoImpl;
 import org.junit.Test;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 import javax.persistence.EntityManager;
 
@@ -9,6 +11,8 @@ import javax.persistence.EntityManager;
  * Created by ownlove on 2018/12/20.
  */
 public class TbManagerTest {
+
+    private static final Logger log = LoggerFactory.getLogger(TbManagerTest.class);
 
     EntityManager em;
     ITbManagerDao tbManagerDao = new TbManagerDaoImpl();
@@ -32,7 +36,7 @@ public class TbManagerTest {
     }
     @Test
     public void update(){
-
+        log.info("adffdasafds");
     }
 
     @Test
