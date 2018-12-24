@@ -7,30 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f04a66a-e94d-44d1-b5d1-67bca2982ea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/hiber_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/hiber_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hiber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hiber.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberRegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberRegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/RegisterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/service/impl/RegisterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/impl/RegisterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/lib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DaoTest/MemberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DaoTest/MemberTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,14 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MemberDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MemberDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="135">
               <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hotel_management_system.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1161">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -103,15 +89,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/html/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -580,7 +557,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545643535495</updated>
       <workItem from="1545643539481" duration="1087000" />
-      <workItem from="1545644670024" duration="7759000" />
+      <workItem from="1545644670024" duration="8626000" />
     </task>
     <servers />
   </component>
@@ -599,11 +576,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8846000" />
+    <option name="totallyTimeSpent" value="9713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="29" width="1853" height="1051" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -802,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lusr/entity/Room.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -983,11 +952,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="135">
           <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
         </state>
       </provider>
     </entry>
