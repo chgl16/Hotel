@@ -1,8 +1,5 @@
 package com.lusr.controller;
 
-import com.lusr.service.LoginService;
-import com.lusr.service.impl.LoginServiceImpl;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,16 +7,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/login")
-public class LoginServlet extends HttpServlet {
-    private LoginService loginService;
+/**
+ * 注册
+ *
+ * @author chgl16
+ * @date 2018-12-23 16:56
+ * @version 1.0
+ */
 
+@WebServlet(urlPatterns = "/register" )
+public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        loginService = new LoginServiceImpl();
+        String username = request.getParameter("username");
+
+        // 调用业务处理
+
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+
     }
 }
