@@ -4,6 +4,7 @@ import com.lusr.dao.MemberDao;
 import com.lusr.dao.impl.MemberDaoImpl;
 import com.lusr.entity.Member;
 import com.lusr.service.RegisterService;
+import com.lusr.util.BCrypt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +24,8 @@ public class RegisterServiceImpl implements RegisterService {
     public boolean MemberRegister(Member member) {
         if (memberDao.findMemberByPhone(member.getPhone()) == null) {
             log.info("该手机号尚未注册，现在为其注册");
+            // 加密密码
+            member.setPassword(BCrypt.hashpw(member.getPassword(), BCrypt.gensalt()));
             memberDao.insertMember(member);
             return true;
         }

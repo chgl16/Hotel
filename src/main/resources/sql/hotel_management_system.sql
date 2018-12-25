@@ -8,18 +8,18 @@ USE hotel_management_system;
 create table member(
 	id int PRIMARY key AUTO_INCREMENT comment '序号,自增',
 	phone VARCHAR(11) UNIQUE comment '手机号，作为登录',
-	identity	VARCHAR(20) not null comment '身份证',
+	identity	VARCHAR(30) not null comment '身份证',
 	username VARCHAR(20) not null comment '用户名',
-	password	VARCHAR(20) not null comment 'MD5'
+	password	VARCHAR(70) not null comment 'BCrypt'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 create table manager(
 	id int PRIMARY key auto_increment comment '序号，自增',
 	phone varchar(11) UNIQUE comment '手机号，凭证',
-	identity varchar(20) not null comment '身份证',
+	identity varchar(30) not null comment '身份证',
 	username varchar(20) not null comment '用户名',
-	password varchar(40) not null comment 'MD5'
+	password varchar(70) not null comment 'BCrypt'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

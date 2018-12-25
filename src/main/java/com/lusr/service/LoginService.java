@@ -2,12 +2,13 @@ package com.lusr.service;
 
 public interface LoginService {
     /**
+     * 会员登录
      *
      * @param phone
      * @param password
-     * @return
+     * @return "success" / "wrong-password" / "unregistered"
      */
-    public String login(String phone, String password);
+    public String MemberLogin(String phone, String password);
 
 
 }
