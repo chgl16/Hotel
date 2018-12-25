@@ -10,7 +10,10 @@ public class MemberTest {
 
     @Test
     public void testFind() {
-        Member member = memberDao.findMemberByPhone("456");
-        System.out.println(member);
+        Member member = memberDao.findMemberByPhone("18718803003");
+        if (member != null) {
+            System.out.println(member);
+        }
+
     }
 }

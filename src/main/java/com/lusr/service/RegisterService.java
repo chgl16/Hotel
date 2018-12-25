@@ -1,5 +1,7 @@
 package com.lusr.service;
 
+import com.lusr.entity.Member;
+
 /**
  * 会员和员工注册业务
  *
@@ -12,10 +14,8 @@ public interface RegisterService {
     /**
      * 会员注册
      *
-     * @param phone
-     * @param username
-     * @param password
+     * @param member
      * @return true-成功/false-失败
      */
-    public boolean MemberRegister(String phone, String username, String password);
+    public boolean MemberRegister(Member member);
 }

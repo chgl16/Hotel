@@ -38,3 +38,11 @@ body {
 a {
     color: gray;
 }
+
+.a-left {
+    margin-right: 5%;
+}
+
+.a-right {
+    margin-left: 5%;
+}

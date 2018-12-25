@@ -30,6 +30,10 @@ public class MemberDaoImpl implements MemberDao {
 
     @Override
     public void insertMember(Member member) {
-
+        em.getTransaction().begin();
+        em.persist(member);
+        em.getTransaction().commit();
+        // 固定了一个数据库连接，就不关了
+//        em.close();
     }
 }
