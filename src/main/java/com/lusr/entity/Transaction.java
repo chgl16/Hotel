@@ -23,12 +23,12 @@ public class Transaction {
     private String phone;
     private String identity;
     private int room_id;
-    private Timestamp time;
+    private String time;
     private Integer days;
-    private BigDecimal money;
-    private Integer statu;
-    private Timestamp start_time;
-    private Timestamp end_time;
+    private float money;
+    private Integer status;
+    private String start_time;
+    private String end_time;
 
     public int getId() {
         return id;
@@ -78,11 +78,11 @@ public class Transaction {
         this.room_id = room_id;
     }
 
-    public Timestamp getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Timestamp time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -94,35 +94,35 @@ public class Transaction {
         this.days = days;
     }
 
-    public BigDecimal getMoney() {
+    public float getMoney() {
         return money;
     }
 
-    public void setMoney(BigDecimal money) {
+    public void setMoney(float money) {
         this.money = money;
     }
 
-    public Integer getStatu() {
-        return statu;
+    public Integer getStatus() {
+        return status;
     }
 
-    public void setStatu(Integer statu) {
-        this.statu = statu;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
-    public Timestamp getStart_time() {
+    public String getStart_time() {
         return start_time;
     }
 
-    public void setStart_time(Timestamp start_time) {
+    public void setStart_time(String start_time) {
         this.start_time = start_time;
     }
 
-    public Timestamp getEnd_time() {
+    public String getEnd_time() {
         return end_time;
     }
 
-    public void setEnd_time(Timestamp end_time) {
+    public void setEnd_time(String end_time) {
         this.end_time = end_time;
     }
 }

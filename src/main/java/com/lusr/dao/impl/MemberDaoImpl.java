@@ -2,6 +2,7 @@ package com.lusr.dao.impl;
 
 import com.lusr.dao.MemberDao;
 import com.lusr.entity.Member;
+import com.lusr.util.EMUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
@@ -17,7 +18,7 @@ import java.util.List;
  */
 
 public class MemberDaoImpl implements MemberDao {
-    private static final EntityManager em = Persistence.createEntityManagerFactory("hotel").createEntityManager();
+    private EntityManager em = EMUtil.getEM();
 
     @Override
     public Member findMemberByPhone(String phone) {

@@ -21,7 +21,7 @@ import java.io.IOException;
  * @version 1.0
  */
 
-@WebServlet(urlPatterns = "/register" )
+@WebServlet(urlPatterns = "/member/register" )
 public class MemberRegisterServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(MemberRegisterServlet.class);
     private RegisterService registerService = new RegisterServiceImpl();
