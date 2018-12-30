@@ -6,73 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f04a66a-e94d-44d1-b5d1-67bca2982ea4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/GetFreeRoomServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/VisitorBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/RoomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/VisitorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/RoomDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/VisitorDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/RoomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/VisitorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/impl/RoomServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/service/impl/VisitorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lusr/util/EMUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/member.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/room.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/manager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/pre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/room.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/img_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/chaxun.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/member_log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/xiugai.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/magnific-popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/hotel_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/hotel_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberRegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/controller/MemberRegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/dao/impl/MemberDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lusr/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Test.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/chaxun.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chaxun.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/person.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/person.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/tuiding.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/tuiding.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/xiugai.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/xiugai.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/yuding.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/yuding.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/chaxun.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/chaxun.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/first.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/manager_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/manager_log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/member_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/member_log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/person.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/tuiding.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/tuiding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/xiugai.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/xiugai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/yuding.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/yuding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/img_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img_6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/person_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/person.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/tuiding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/tuiding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/yuding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/yuding.js" afterDir="false" />
-    </list>
+    <list default="true" id="6f04a66a-e94d-44d1-b5d1-67bca2982ea4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,7 +20,7 @@
       <file leaf-file-name="hotel_management_system.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="256">
               <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
             </state>
           </provider>
@@ -855,7 +789,7 @@
       <workItem from="1545643539481" duration="1087000" />
       <workItem from="1545644670024" duration="24005000" />
       <workItem from="1545726361490" duration="4856000" />
-      <workItem from="1546182554707" duration="24171000" />
+      <workItem from="1546182554707" duration="24412000" />
     </task>
     <servers />
   </component>
@@ -892,11 +826,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54119000" />
+    <option name="totallyTimeSpent" value="54360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="29" width="1853" height="1051" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5018888" side_tool="true" weight="0.33297873" />
@@ -918,9 +851,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8478144" visible="true" weight="0.44527897" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49811116" weight="0.33261803" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49903288" visible="true" weight="0.21802482" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8478144" weight="0.44527897" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49811116" visible="true" weight="0.33261803" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49903288" visible="true" weight="0.21802482" />
       <window_info id="Web" order="2" sideWeight="0.50096714" side_tool="true" weight="0.21802482" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1351,7 +1284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/hotel_management_system.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="256">
           <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
         </state>
       </provider>

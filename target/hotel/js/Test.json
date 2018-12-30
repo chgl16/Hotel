@@ -1,3 +1,0 @@
-data = '[{"roomType":"豪华单人房","startDate":"2018/12/18","endDate":"2018/12/20","price":"100"},{"roomType":"标准双人房","startDate":"2018/12/18","endDate":"2018/12/20","price":"150"},{"roomType":"标准双人房","startDate":"2018/12/18","endDate":"2018/12/20","price":"150"}]';
-data1 = '[{"roomType":"标准单人房","price":"100"}]';
-data2 = '[{"username":"xiao","roomType":"豪华单人房","startDate":"2018/12/18","endDate":"2018/12/20","price":"100"}]';
