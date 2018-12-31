@@ -1,4 +1,11 @@
 window.onload = function (ev) {
+    if (localStorage.getItem("phone") != null && localStorage.getItem("phone") != "") {
+        // 用户已经登录, 隐藏登录框
+        $('#dv1')[0].style.visibility='hidden';
+    } else {
+        $('#dv1')[0].style.visibility='visible';
+    }
+
     // 获取可选房间
     $.get({
         url: "/getFreeRoom",
@@ -27,12 +34,14 @@ function fillTable(data) {
 
 function book(id, price) {
     console.log("预订房号:" + id);
-    if (localStorage.getItem("phone") == null) {
-        console.log("未登录的游客");
+    // if (localStorage.getItem("phone") == null || localStorage.getItem("phone") == "") {
+    //     console.log("未登录的游客");
         $("#room-id")[0].innerHTML = id;
         $("#price")[0].innerHTML = price;
         $(".book_detail")[0].style.visibility = 'visible';
-    }
+    // } else {
+    //     // 登录的会员
+    // }
 }
 
 // 测试弹窗显示房间类型图片
@@ -59,7 +68,7 @@ $("#comfirm-book")[0].onclick = function (ev) {
     console.log(room_id + ", " + price + ", " + days);
 
     $.post({
-        url: "/visitor/book",
+        url: "/book",
         dataType: "json",
         data: {"room_id": room_id, "days": days, "money": money, "phone": phone, "identity": identity},
         success: function (data) {

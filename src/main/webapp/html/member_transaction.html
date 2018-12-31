@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf8">
+    <title>所有个人订单</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/Test.css">
+    <link rel="stylesheet" type="text/css" href="../css/tuiding.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="main">
+        <header class="head">
+            <button id="m">
+                <span class="glyphicon glyphicon-th-list"></span>
+            </button>
+            <a href="index.html" id="home">HAPPYHOTEL</a>
+            <div id="dv1">
+                <a href="member_log.html" id="log" class="en">登陆 & 注册</a>
+            </div>
+            <div id="dv2">
+                name：<label></label>&nbsp|&nbsp
+                <a href="#" id="logout">注销</a>
+            </div>
+        </header>
+        <div id="main_content">
+            <table id="table-1">
+                <thead>
+                <tr>
+                    <th>订单号</th>
+                    <th>房间号</th>
+                    <th>预订时间</th>
+                    <th>到期时间</th>
+                    <th>消费金额</th>
+                    <th>联系电话</th>
+                    <th>订单状态</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="menupop">
+        <ul>
+            <li class="opa"><a href="index.html">首　页</a></li>
+            <li class="opa"><a href="person.html">个人信息</a></li>
+            <li class="opa"><a href="tuiding.html">退订订单</a></li>
+            <li class="opa"><a href="member_transaction.html">订单查看</a></li>
+            <li class="opa"><a onclick="javascript:localStorage.setItem('phone', '');
+                $('#dv1')[0].style.visibility='visible';">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<script src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../js/Test.js"></script>
+<script type="text/javascript" src="../js/member_transaction.js"></script>
+</body>
+
+</html>

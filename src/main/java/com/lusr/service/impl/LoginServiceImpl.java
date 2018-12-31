@@ -20,7 +20,7 @@ public class LoginServiceImpl implements LoginService {
             // 注意BCrypt的密码是不固定的，多对多，需要用其实现的算法判断是否匹配
             if (BCrypt.checkpw(password, member.getPassword())) {
                 log.info("密码正确");
-                return "success";
+                return phone;
             } else {
                 log.info("密码错误");
                 return "wrong-password";

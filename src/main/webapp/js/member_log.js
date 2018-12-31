@@ -114,10 +114,6 @@ $(function() {
     $("#login-form").ajaxForm(function (data) {
         console.log("获取到后台返回参数: " + data);
         switch (data) {
-            case "success":
-                alert("登录成功,进入首页..");
-                window.location.href = "index.html";
-                break;
             case "unregistered":
                 alert("尚未注册,请注册");
                 // window.location.href = "register.html";
@@ -125,6 +121,11 @@ $(function() {
             case "wrong-password":
                 alert("密码错误,请重新输入");
                 window.location.reload();
+                break;
+            default:
+                alert("登录成功,进入首页..");
+                localStorage.setItem("phone", data);
+                window.location.href = "index.html";
                 break;
         }
     });

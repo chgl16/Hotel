@@ -1,7 +1,7 @@
 package com.lusr.controller;
 
-import com.lusr.service.VisitorService;
-import com.lusr.service.impl.VisitorServiceImpl;
+import com.lusr.service.TransactionService;
+import com.lusr.service.impl.TransactionServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,9 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "VisitorBookServlet", urlPatterns = "/visitor/book")
-public class VisitorBookServlet extends HttpServlet {
-    private static final Logger log = LoggerFactory.getLogger(VisitorBookServlet.class);
+@WebServlet(name = "BookServlet", urlPatterns = "/book")
+public class BookServlet extends HttpServlet {
+    private static final Logger log = LoggerFactory.getLogger(BookServlet.class);
+    private TransactionService transactionService = new TransactionServiceImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int room_id = Integer.parseInt(request.getParameter("room_id"));
@@ -24,8 +25,7 @@ public class VisitorBookServlet extends HttpServlet {
         String identity = request.getParameter("identity");
 
         log.info("room_id: " + room_id + ", money: " + money + ", phone: " + phone + ", identity: " + identity);
-        VisitorService visitorService = new VisitorServiceImpl();
-        visitorService.createBookTransaction(room_id, days, money, phone, identity);
+        transactionService.createBookTransaction(room_id, days, money, phone, identity);
 
         response.getWriter().write("{\"flag\": \"success\"}");
     }

@@ -1,20 +1,20 @@
 package com.lusr.service.impl;
 
-import com.lusr.dao.VisitorDao;
-import com.lusr.dao.impl.VisitorDaoImpl;
+import com.lusr.dao.TransactionDao;
+import com.lusr.dao.impl.TransactionDaoImpl;
 import com.lusr.entity.Transaction;
-import com.lusr.service.VisitorService;
+import com.lusr.service.TransactionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
-public class VisitorServiceImpl implements VisitorService {
-    private static final Logger log = LoggerFactory.getLogger(VisitorServiceImpl.class);
-    private VisitorDao visitorDao = new VisitorDaoImpl();
-
+public class TransactionServiceImpl implements TransactionService {
+    private static final Logger log = LoggerFactory.getLogger(TransactionServiceImpl.class);
+    private TransactionDao transactionDao = new TransactionDaoImpl();
 
     @Override
     public void createBookTransaction(int room_id, int days, float money, String phone, String identity) {
@@ -38,6 +38,23 @@ public class VisitorServiceImpl implements VisitorService {
         transaction.setPhone(phone);
         transaction.setIdentity(identity);
 
-        visitorDao.insertTransaction(transaction);
+        transactionDao.insertTransaction(transaction);
+    }
+
+    @Override
+    public List<Transaction> getAllTransactionByPhone(String phone) {
+        return transactionDao.selectAllTransactionByPhone(phone);
+    }
+
+    @Override
+    public List<Transaction> getValidTransactionByPhone(String phone) {
+        return transactionDao.selectValidTransactionByPhone(phone);
+    }
+
+    @Override
+    public void updateStatusZero(Integer id) {
+        log.info("正在修改订单状态");
+        transactionDao.updateStatusZero(id);
+        log.info("修改订单状态成功");
     }
 }
