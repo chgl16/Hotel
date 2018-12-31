@@ -24,18 +24,31 @@ public class TransactionDaoImpl implements TransactionDao {
 
     @Override
     public List<Transaction> selectValidTransactionByPhone(String phone) {
-        em.getTransaction().begin();
-        Query query = em.createQuery("SELECT t FROM Transaction t WHERE t.status = 1 AND t.phone = ?1");
+        // 清除存储，到数据库取检索
+        em.clear();
+        Query query = em.createQuery("SELECT t FROM Transaction t WHERE t.status = 1 AND t.phone = ?1  ORDER BY t.id DESC");
         query.setParameter(1, new String(phone));
-        return query.getResultList();
+        List<Transaction> transactionList = query.getResultList();
+        return transactionList;
     }
 
     @Override
     public List<Transaction> selectAllTransactionByPhone(String phone) {
-        em.getTransaction().begin();
-        Query query = em.createQuery("SELECT t FROM Transaction t WHERE  t.phone = ?1");
+        // 清除存储，到数据库取检索
+        em.clear();
+        Query query = em.createQuery("SELECT t FROM Transaction t WHERE  t.phone = ?1 ORDER BY t.id DESC");
         query.setParameter(1, new String(phone));
-        return query.getResultList();
+        List<Transaction> transactionList = query.getResultList();
+        return transactionList;
+    }
+
+    @Override
+    public List<Transaction> selectAllTransaction() {
+        // 清除存储，到数据库取检索
+        em.clear();
+        Query query = em.createQuery("SELECT t FROM Transaction t  ORDER BY t.id DESC");
+        List<Transaction> transactionList = query.getResultList();
+        return transactionList;
     }
 
     @Override
@@ -44,7 +57,13 @@ public class TransactionDaoImpl implements TransactionDao {
         em.getTransaction().begin();
         Transaction t = em.find(Transaction.class, id);
         t.setStatus(0);
+
+        // 更新room的状态(只能通过id更新)
+        Room r = em.find(Room.class, t.getRoom_id());
+        r.setStatus(0);
+        em.flush();
         em.getTransaction().commit();
+
         System.out.println("成功修改状态");
     }
 }

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
     <style>
         .div1{
-            padding-top: 10%;
-            margin:0px auto;
+            padding-top: 7%;
+            margin:10px auto;
             width:500px; /* 必须制定宽度 */
         }
         .bg{
@@ -49,7 +49,10 @@
 </head>
 <body class="bg">
     <div class="div1">
-        <a href="html/index.html" class="butn">进入系统</a>
+        <a href="html/index.html" target="_blank" class="butn">进入用户系统</a>
+    </div>
+    <div class="div1">
+        <a href="html/room.html" target="_blank" class="butn">进入会员系统</a>
     </div>
 </body>
 </html>

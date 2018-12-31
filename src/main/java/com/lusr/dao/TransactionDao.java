@@ -38,6 +38,13 @@ public interface TransactionDao {
     public List<Transaction> selectAllTransactionByPhone(String phone);
 
     /**
+     * 获取所有订单
+     *
+     * @return
+     */
+    public List<Transaction> selectAllTransaction();
+
+    /**
      * 退订订单
      *
      * @param id

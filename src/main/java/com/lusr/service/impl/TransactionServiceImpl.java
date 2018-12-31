@@ -47,6 +47,11 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
+    public List<Transaction> getAllTransaction() {
+        return transactionDao.selectAllTransaction();
+    }
+
+    @Override
     public List<Transaction> getValidTransactionByPhone(String phone) {
         return transactionDao.selectValidTransactionByPhone(phone);
     }

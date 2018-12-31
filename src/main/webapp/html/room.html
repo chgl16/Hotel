@@ -16,7 +16,7 @@
                 <button id="m">
                     <span class="glyphicon glyphicon-th-list"></span>
                 </button>
-                <a href="manager.html" id="home">HAPPYHOTEL</a>
+                <a href="#" id="home">员工系统</a>
                 <div id="dv1">
                     <a href="index.html" id="member" class="en"> 会员入口 </a>
                 </div>
@@ -29,41 +29,30 @@
                 <table id="table-1">
                     <thead>
                         <tr>
-                            <th>房型</th>
+                            <th>房号</th>
+                            <th>类型</th>
                             <th>价格</th>
-                            <th> </th>
+                            <th>状态</th>
+                            <th>操作</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>标准单人房</td>
-                            <td><input type="text" name="" value="100" class="txt"></td>
-                            <td><input type='button' value='修改' class='bt'></td>
-                        </tr>
-                        <tr>
-                            <td>标准双人房</td>
-                            <td><input type="text" name="" value="150" class="txt"></td>
-                            <td><input type='button' value='修改' class='bt'></td>
-                        </tr>
-                        <tr>
-                            <td>豪华单人房</td>
-                            <td><input type="text" name="" value="200" class="txt"></td>
-                            <td><input type='button' value='修改' class='bt'></td>
-                        </tr>
+                    <tbody id="tbody">
+
                     </tbody>
                 </table>
             </div>
         </div>
         <div id="menupop">
             <ul>
+                <li class="opa"><a href="add_room.html">新增房间</a></li>
                 <li class="opa"><a href="room.html">房间维护</a></li>
-                <li class="opa"><a href="pre.html">代理预定</a></li>
+                <li class="opa"><a href="recent_transaction.html">最近订单</a></li>
             </ul>
         </div>
     </div>
     <script src="../lib/jquery.js"></script>
     <script type="text/javascript" src="../js/Test.js"></script>
-    <script type="text/javascript" src="../js/Test.json"></script>
+    <script type="text/javascript" src="../js/room.js"></script>
 </body>
 
 </html>

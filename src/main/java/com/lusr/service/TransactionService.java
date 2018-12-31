@@ -41,6 +41,13 @@ public interface TransactionService {
     public List<Transaction> getValidTransactionByPhone(String phone);
 
     /**
+     * 获取所有订单
+     *
+     * @return
+     */
+    public List<Transaction> getAllTransaction();
+
+    /**
      * 更新订单状态为失效
      *
      * @param id

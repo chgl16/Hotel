@@ -3,10 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf8">
-    <title>所有个人订单</title>
+    <title>最近订单</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/Test.css">
-    <link rel="stylesheet" type="text/css" href="../css/tuiding.css">
+    <link rel="stylesheet" type="text/css" href="../css/room.css">
 </head>
 
 <body>
@@ -16,12 +16,12 @@
             <button id="m">
                 <span class="glyphicon glyphicon-th-list"></span>
             </button>
-            <a href="#"id="home">HAPPYHOTEL</a>
+            <a href="#" id="home">员工系统</a>
             <div id="dv1">
-                <a href="member_log.html" id="log" class="en">登陆 & 注册</a>
+                <a href="index.html" id="member" class="en"> 会员入口 </a>
             </div>
             <div id="dv2">
-                name：<label></label>&nbsp|&nbsp
+                账户：<label></label>&nbsp|&nbsp
                 <a href="#" id="logout">注销</a>
             </div>
         </header>
@@ -30,12 +30,12 @@
                 <thead>
                 <tr>
                     <th>订单号</th>
+                    <th>创建时间</th>
+                    <th>天数</th>
                     <th>房间号</th>
-                    <th>预订时间</th>
-                    <th>到期时间</th>
-                    <th>消费金额</th>
-                    <th>联系电话</th>
-                    <th>订单状态</th>
+                    <th>用户手机号</th>
+                    <th>金额</th>
+                    <th>状态</th>
                 </tr>
                 </thead>
                 <tbody id="tbody">
@@ -46,18 +46,15 @@
     </div>
     <div id="menupop">
         <ul>
-            <li class="opa"><a href="index.html">首　页</a></li>
-            <li class="opa"><a href="person.html">个人信息</a></li>
-            <li class="opa"><a href="tuiding.html">退订订单</a></li>
-            <li class="opa"><a href="member_transaction.html">订单查看</a></li>
-            <li class="opa"><a onclick="javascript:localStorage.setItem('phone', '');
-                $('#dv1')[0].style.visibility='visible';">退出登录</a></li>
+            <li class="opa"><a href="add_room.html">新增房间</a></li>
+            <li class="opa"><a href="room.html">房间维护</a></li>
+            <li class="opa"><a href="recent_transaction.html">最近订单</a></li>
         </ul>
     </div>
 </div>
 <script src="../lib/jquery.js"></script>
 <script type="text/javascript" src="../js/Test.js"></script>
-<script type="text/javascript" src="../js/member_transaction.js"></script>
+<script type="text/javascript" src="../js/recent_transaction.js"></script>
 </body>
 
 </html>
