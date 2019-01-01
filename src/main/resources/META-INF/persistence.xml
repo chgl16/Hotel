@@ -7,7 +7,7 @@
         <class>com.lusr.entity.Room</class>
         <class>com.lusr.entity.Transaction</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://120.79.164.198:3306/hotel_management_system?useSSL=true&amp;characterEncoding=utf-8"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://128.75.544.158:3706/anagemen_system?useSSL=true&amp;characterEncoding=utf-8"/>
             <property name="javax.persistence.jdbc.user" value="wawawawawa"/>
             <property name="javax.persistence.jdbc.password" value="lalallala"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
