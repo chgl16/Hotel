@@ -1,23 +1,35 @@
 package com.lusr.service.impl;
 
-import com.lusr.entity.TbManagerEntity;
-import com.lusr.dao.ITbManagerDao;
-import com.lusr.dao.impl.TbManagerDaoImpl;
-import com.lusr.service.IRegisterService;
+import com.lusr.dao.MemberDao;
+import com.lusr.dao.impl.MemberDaoImpl;
+import com.lusr.entity.Member;
+import com.lusr.service.RegisterService;
+import com.lusr.util.BCrypt;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * Created by ownlove on 2018/12/21.
+ * 注册业务实现
+ *
+ * @author chgl16
+ * @date 2018-12-24 19:09
+ * @version 1.0
  */
-public class RegisterServiceImpl implements IRegisterService{
+
+public class RegisterServiceImpl implements RegisterService {
+    private static final Logger log = LoggerFactory.getLogger(RegisterServiceImpl.class);
+    private MemberDao memberDao = new MemberDaoImpl();
 
     @Override
-    public void login(TbManagerEntity tbManagerEntity) {
-        ITbManagerDao tbManagerDao = new TbManagerDaoImpl();
-
-    }
-
-    @Override
-    public void changeMassage() {
-
+    public boolean MemberRegister(Member member) {
+        if (memberDao.findMemberByPhone(member.getPhone()) == null) {
+            log.info("该手机号尚未注册，现在为其注册");
+            // 加密密码
+            member.setPassword(BCrypt.hashpw(member.getPassword(), BCrypt.gensalt()));
+            memberDao.insertMember(member);
+            return true;
+        }
+        log.info("用户已经注册");
+        return false;
     }
 }

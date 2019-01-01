@@ -1,7 +1,13 @@
-﻿p{
+p{
 	display: block;
 	position: relative;
 	top:30px;
 	font-size: 100px;
 	color: #000;
+}
+
+.show-room {
+	display: inline-block;
+	color: gray;
+	text-align: center;
 }

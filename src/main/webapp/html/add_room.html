@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf8">
+    <title>添加房间</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/Test.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_room.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="main">
+        <header class="head">
+            <button id="m">
+                <span class="glyphicon glyphicon-th-list"></span>
+            </button>
+            <a href="#" id="home">员工系统</a>
+            <div id="dv1">
+                <a href="index.html" id="member" class="en"> 会员入口 </a>
+            </div>
+            <div id="dv2">
+                账户：<label></label>&nbsp|&nbsp
+                <a href="#" id="logout">注销</a>
+            </div>
+        </header>
+        <div id="main_content">
+            <form class="add_form" id="add_form" action="/addRoom" method="post">
+                <label>添加房间</label>
+                <hr>
+                <input type="text" name="id" placeholder="房间号">
+                <input type="text" name="type" placeholder="房间类型">
+                <input type="text" name="price" placeholder="房间价格">
+                <hr><br>
+                <input type="submit" id="submit" value="添加">
+                <input type="reset" id="reset" value="重置">
+            </form>
+        </div>
+    </div>
+    <div id="menupop">
+        <ul>
+            <li class="opa"><a href="add_room.html">新增房间</a></li>
+            <li class="opa"><a href="room.html">房间维护</a></li>
+            <li class="opa"><a href="recent_transaction.html">最近订单</a></li>
+        </ul>
+    </div>
+</div>
+<script src="../lib/jquery.js"></script>
+<script src="../lib/jquery-form.js"></script>
+<script type="text/javascript" src="../js/Test.js"></script>
+<script type="text/javascript" src="../js/add_room.js"></script>
+</body>
+
+</html>

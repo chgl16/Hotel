@@ -10,7 +10,8 @@ body {
 
 body {
     min-width: 900px;
-    background-image: url(../images/big_image_1.jpg);
+    background-color: #373737;
+    /*background-image: url(../images/img_7.jpg);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     /*background-position: center center;*/
@@ -39,6 +40,7 @@ body {
 }
 
 #dv1 {
+    visibility: hidden;
     position: absolute;
     right: 20px;
     height: 30px;

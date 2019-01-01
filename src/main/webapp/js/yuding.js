@@ -1,16 +1,9 @@
 $(document).ready(function() {
-    // 获取当前日期
+    //调整订房日期
     var date = new Date();
-    // 获取当前月份
     var nowMonth = date.getMonth() + 1;
-
-    // 获取当前是几号
     var strDate = date.getDate();
-
-    // 添加分隔符“-”
     var seperator = "-";
-
-    // 最后拼接字符串，得到一个格式为(yyyy-MM-dd)的日期
     var nowDate = date.getFullYear() + seperator + nowMonth + seperator + strDate;
 
     $("#start_date").attr("min", nowDate);
@@ -46,18 +39,11 @@ $(document).ready(function() {
     }
 
     function getFormatDate(date) {
-        // 获取当前月份
+
         var nowMonth = date.getMonth() + 1;
-
-        // 获取当前是几号
         var strDate = date.getDate();
-
-        // 添加分隔符“-”
         var seperator = "-";
-
-        // 最后拼接字符串，得到一个格式为(yyyy-MM-dd)的日期
         var nowDate = date.getFullYear() + seperator + nowMonth + seperator + strDate;
-
         return nowDate;
     }
 
@@ -65,5 +51,10 @@ $(document).ready(function() {
         var milosec = parseInt(Date.parse(str2.replace(/-/g, "/"))) - parseInt(Date.parse(str1.replace(/-/g, "/")));
         milosec = milosec/(24 * 60 * 60 * 1000);
         return milosec;
+    }
+
+    var room = JSON.parse(data1);
+    for(var i=0;i<room.length;i++){
+        $('#table-1 tbody').append("<tr><td>"+room[i].roomType+"</td><td>"+room[i].price+"</td><td><input type='button' value='预订' class='bt'></td></tr>");
     }
 });

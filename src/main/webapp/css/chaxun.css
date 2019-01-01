@@ -10,20 +10,26 @@
     border-bottom-style: solid;
     border-bottom-color: rgb(235, 242, 224);
     width: 800px;
-    height: 600px;
     margin: 30px auto;
 }
 
-#table-1 th{
+#table-1 th {
     text-align: center;
 }
 
-#table-1 td,
 #table-1 th {
     padding: 5px 10px;
     font-size: 20px;
     font-family: Verdana;
-    color: #8B8B00
+    color: gray;
+    height: 78px;
+}
+#table-1 td {
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: Verdana;
+    color: #8B8B00;
+    height: 65px;
 }
 
 #table-1 tr:nth-child(even) {
@@ -31,5 +37,59 @@
 }
 
 #table-1 tr:nth-child(odd) {
-    background: rgb(255,255,255,0);
+    background: rgb(255, 255, 255, 0);
+}
+
+#main_content>input {
+    width: 200px;
+    height: 30px;
+    background: rgb(255, 255, 255, 0);
+    outline: none;
+    border: 1px solid #000;
+}
+
+#main_content>button {
+    width: 50px;
+    background: rgb(255, 255, 255, 0);
+    outline: none;
+    border: 1px solid #000;
+    height: 30px;
+}
+
+.book_detail {
+    visibility: hidden;
+    position: absolute;
+    top: 19%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+    background-color: #222;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.book_detail input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.book_detail label {
+    font-size: 18px;
+    color: #e3e3e3;
+}
+
+#comfirm-book, #concel  {
+    background-color: #4CAF50;
 }
