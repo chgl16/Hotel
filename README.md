@@ -19,6 +19,6 @@
 # 打包成war包
 mvn clean compile package
 ```
-**部署到Servlet容器即可，如Tomcat,Jetty**
->注意项目的默认设定虚拟访问路径是 =="/"==
+**部署到Servlet容器即可，如Tomcat, Jetty**
+>注意项目的默认设定虚拟访问路径是=="/"==
 
